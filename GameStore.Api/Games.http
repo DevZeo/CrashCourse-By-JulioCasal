@@ -1,0 +1,29 @@
+GET http://localhost:5062/games
+
+###
+GET http://localhost:5062/games/2
+
+### 
+POST http://localhost:5062/games
+Content-Type: application/json
+
+{
+    "name": "Final Fantasy XV",
+    "genreId": 2,
+    "price": 53.99,
+    "releaseDate": "2011-11-18"
+}
+
+###
+PUT http://localhost:5062/games/3
+Content-Type: application/json
+
+{
+    "name": "Street Fighter II Turbo",
+    "genreid": 1,
+    "price": 19.99,
+    "releaseDate": "1992-07-16"
+}
+
+###
+DELETE  http://localhost:5062/games/5
